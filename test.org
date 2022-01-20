@@ -1,0 +1,32 @@
+# -*- eval: (p/setup-bib-completion "~/YD/bibliography"); -*-
+
+#+csl-style: ./gost-r-7-0-5-2008-author-date-alphab.csl
+#+csl-locale: ru-RU
+
+#+startup: indent fold
+#+options: toc:nil num:nil date:nil
+#+language: ru
+
+#+latex_compiler: xelatex
+#+latex_class: article
+#+latex_class_options: [a4paper,12pt,oneside,onecolumn]
+#+latex_header: \usepackage{indentfirst}
+#+latex_header: \usepackage[margin=2cm]{geometry}
+#+latex_header: \usepackage{fontspec}
+#+latex_header: \setmainfont{Times New Roman}
+
+#+title: Тестовый документ
+#+author: Павел Степанов
+
+* Заголовок
+Текст со ссылкой на Хомского [[cite:&chomsky2006cognitive 5-9]].
+
+Текст со ссылкой на Панченко [[cite:&панченко2009когнитивные]].
+
+Текст со ссылкой на Хомского и Панченко [[cite:&chomsky2006cognitive 10;&панченко2009когнитивные 13]].
+* Список литературы
+bibliography:~/YD/bibliography/references.bib
+
+# Local Variables:
+# org-cite-csl-locales-dir: "./"
+# End:
